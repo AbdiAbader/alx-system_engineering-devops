@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type "*.git" | rev | cut -d\ -f1 | cut -d. -f,3 | rev | sort -Vf 
