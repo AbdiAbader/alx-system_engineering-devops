@@ -11,4 +11,5 @@
 10.square
 11.binary to decimal
 12.combinations
-13.
+13.float
+14.
