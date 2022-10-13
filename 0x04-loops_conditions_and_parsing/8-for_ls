@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#prints file in current directory
+for i in *; do
+   cut -d "-" -f2 <<< "$i";
+done
