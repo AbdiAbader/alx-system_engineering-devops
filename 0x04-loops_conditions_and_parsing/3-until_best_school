@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# prints using Until 10X
+i=0
+until [[ $i -ge 10 ]]; do
+    echo "Best School";
+    ((i++));
+done
