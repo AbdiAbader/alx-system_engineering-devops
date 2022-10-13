@@ -2,7 +2,7 @@
 #check file exists and check if empty.
 
 if [ -f "school" ]; then
-    echo "school file exists";
+    echo "school file exist";
     if [ -s "school" ]; then
 	echo "school file is not empty";
     else
