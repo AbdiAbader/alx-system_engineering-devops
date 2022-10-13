@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#This script prints 10x Best School to the screen.
+for ((i=1;i<11; i++))
+do
+    echo "Best School"
+done
