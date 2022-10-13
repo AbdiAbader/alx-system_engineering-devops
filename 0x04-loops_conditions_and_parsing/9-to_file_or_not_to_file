@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 #check file exists and check if empty.
 
-if [ -f "school" ]; then
-    echo "school file exist";
+if [ -f "school" ] || [ -d "school" ]; then
+    echo "school file exists";
     if [ -s "school" ]; then
 	echo "school file is not empty";
     else
 	echo "school file is empty";
     fi
-    if [ -r "school" ]; then
+    if  test -f "school"; then
 	echo "school is a regular file";
     fi
 else
