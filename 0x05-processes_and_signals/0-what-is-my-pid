@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# Pid process identifiers.
+#script that displays its own PID.
+
 echo "$$"
