@@ -1,1 +1,3 @@
 #!/usr/bin/env bash
+# lsit all current proccess list
+ps -aux | less
