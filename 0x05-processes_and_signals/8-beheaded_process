@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# cript that kills the process 7-highlander.
+pkill -KILL -f "7-highlander"
