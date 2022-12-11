@@ -1,6 +1,11 @@
-#puppet
-file_line { 'identify_and_turn_off_pwd':
+#!/usr/bin/env bash
+# connect with puppet
+file_line { 'Declare_identity_file':
   path    => '/etc/ssh/ssh_config',
-  lines   => 'IdentityFile ~/.ssh/school',
-  lines   => 'PasswordAuthentication no',
+  line    => 'IdentityFile ~/.ssh/school',
+}
+
+file_line { 'Turn_off_passwd_auth':
+  path    => '/etc/ssh/ssh_config',
+  line    => 'PasswordAuthentication no',
 }
