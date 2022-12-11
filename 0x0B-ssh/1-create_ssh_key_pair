@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#
+shh-keygen -b 4096 -t -f school -N "betty"
