@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #installing nginx in my server
 
-sudo apt update
-sudo apt-get -y install nginx
+apt-get update
+apt-get -y install nginx
 
 mv /usr/share/nginx/html/index.html /usr/share/nginx/html/index.txt
 echo "Hello world!" > /usr/share/nginx/html/index.html
