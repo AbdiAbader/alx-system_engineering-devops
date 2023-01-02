@@ -1,4 +1,5 @@
 
+
 #!/usr/bin/env bash
 #installing nginx in my server
 
@@ -6,9 +7,9 @@ apt-get update
 apt-get -y install nginx
 mkdir www
 echo "Hello World!" > www/index.html
-server {
+echo "server {
      listen 80 default_server;
      listen [::]:80 default_server;
      root /www;
-}
+}"  > /etc/nginx/sites-enabled/default
 service nginx restart
