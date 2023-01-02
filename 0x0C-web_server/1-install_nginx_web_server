@@ -1,9 +1,14 @@
+
 #!/usr/bin/env bash
 #installing nginx in my server
 
 apt-get update
 apt-get -y install nginx
-
-mv /usr/share/nginx/html/index.html /usr/share/nginx/html/index.txt
-echo "Hello world!" > /usr/share/nginx/html/index.html
+mkdir www
+echo "Hello World!" > www/index.html
+server {
+     listen 80 default_server;
+     listen [::]:80 default_server;
+     root /www;
+}
 service nginx restart
