@@ -1,8 +1,8 @@
 #!/usr/bin/env bash                                                                                                                                                   
 # installing nginx in my server                                                                                                                                       
 
-apt-get update
-apt-get install -y nginx
+sudo apt-get update
+sudo apt-get install -y nginx
 mkdir /var/www/html/abdi
 touch  /var/www/html/abdi/index.html
 echo "Hello World!" > /var/www/html/abdi/index.html
