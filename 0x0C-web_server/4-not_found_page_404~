@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-# install nginx on server
-
+# redirection
 apt-get update
 apt-get install -y nginx
 
-mkdir /var/www/html
 touch /var/www/html/index.html
 echo "Hello World!" > /var/www/html/index.html
 printf %s "server {
@@ -12,6 +10,9 @@ printf %s "server {
      listen      [::]:80 default_server;
      root        /var/www/html;
      index       index.html index.htm;
+     location /redirect_me {
+        return 301 https://www.youtube.com/@bayyinah;
+    }
 }
 " > /etc/nginx/sites-available/default
 sudo service nginx restart
