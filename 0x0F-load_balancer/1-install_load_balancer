@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# install latest HAProxy
+
+sudo apt install --no-install-recommends software-properties-common
+sudo add-apt-repository ppa:vbernat/haproxy-2.4 -y
+
+sudo apt install haproxy=2.4.\*
