@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-""" Api """
-
-
+""" Export to JSON """
+import json
 import requests
 import sys
-
 
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/users/"
