@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 1-top_ten.py - queries the Reddit API and prints the titles of the first 10 """
+""" 1-top_ten.py  """
 
 
 import requests
