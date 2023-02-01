@@ -1,6 +1,3 @@
 # using Strace to debug a program
 
-exec {
-    strace -o /tmp/strace.log -f -s 1024 -tt -T -e trace=all -p $$ 2>&1
-
-}
+exec { 'strace' } { /usr/bin/strace -o /tmp/strace.log -f -tt -T -s 1024 -p $pid }
