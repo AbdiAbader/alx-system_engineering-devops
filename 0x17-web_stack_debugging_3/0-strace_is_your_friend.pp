@@ -1,6 +1,6 @@
 # using Strace to debug a program
 
 exec { 'strace' :
-      path => '/usr/bin/strace' , 
-      args => [ '-o' , '/tmp/strace.log' , '-f' , '/usr/bin/ls' , '-l' ] 
+      command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php' , 
+      path => 'usr/local/bin:/bin/'
       }
