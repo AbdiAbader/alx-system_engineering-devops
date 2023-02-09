@@ -1,13 +1,13 @@
 # user limit
 
 exec {'user limit':
-  command => "sed -i 's/5/4000/' /etc/security/limits.conf",
-  path    => '/bin',
+  command  => 'sudo sed -i \'s/nofile 4/nofile 10000/\' /etc/security/limits.conf',
+  provider => shell,
 
 }
 
 exec {'user soft':
-  command => "sed -i '/s/4/2000' /etc/security/limits.conf",
-  path    => '/bin',
+  command  => 'sudo sed -i \'s/nofile 4/nofile 10000/\' /etc/security/limits.conf',
+  provider => shell,
 
 }
